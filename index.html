@@ -35,7 +35,6 @@
 
             <nav class="header-nav" id="mainNav">
                 <a href="#inicio" class="active">Inicio</a>
-                <a href="#servicios">Servicios</a>
                 <a href="#productos">Productos</a>
                 <a href="#nosotros">Nosotros</a>
                 <a href="#contacto">Contacto</a>
@@ -44,9 +43,22 @@
                 </span>
             </nav>
 
-            <a href="tel:+34986610887" class="header-phone">
-                <i class="fa-solid fa-phone"></i> 986 61 08 87
-            </a>
+            <div class="header-contact">
+                <a href="mailto:sumilorlorenzo@gmail.com" class="header-email">
+                    <i class="fa-solid fa-envelope"></i> sumilorlorenzo@gmail.com
+                </a>
+                <a href="tel:+34986610887" class="header-phone">
+                    <i class="fa-solid fa-phone"></i> 986 61 08 87
+                </a>
+                <div class="header-social">
+                    <a href="https://www.facebook.com/people/Sumilor/100054225080694/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/sumilor__/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
 
             <button class="header-toggle" id="menuToggle" aria-label="Menú" aria-expanded="false">
                 <span></span>
@@ -84,99 +96,36 @@
                 </div>
             </div>
 
-            <div class="hero-visual reveal">
-                <div class="hero-card">
-                    <div class="hero-card-icon">🛠️</div>
-                    <h3>Todo en un mismo lugar</h3>
-                    <p>Desde una tubería hasta una bomba de calor. Te asesoramos sin compromiso.</p>
-                    <div class="hero-features">
-                        <div class="hero-feature-item">
-                            <i class="fa-solid fa-circle-check"></i> Fontanería
-                        </div>
-                        <div class="hero-feature-item">
-                            <i class="fa-solid fa-circle-check"></i> Calefacción
-                        </div>
-                        <div class="hero-feature-item">
-                            <i class="fa-solid fa-circle-check"></i> Piscinas
-                        </div>
-                        <div class="hero-feature-item">
-                            <i class="fa-solid fa-circle-check"></i> Pinturas
-                        </div>
-                        <div class="hero-feature-item">
-                            <i class="fa-solid fa-circle-check"></i> Renovables
-                        </div>
-                        <div class="hero-feature-item">
-                            <i class="fa-solid fa-circle-check"></i> Accesorios
-                        </div>
-                    </div>
+            <div class="hero-services reveal">
+                <div class="hero-service-card">
+                    <div class="hero-service-icon"><i class="fa-solid fa-faucet-drip"></i></div>
+                    <h4>Fontanería</h4>
+                    <p>Tuberías, grifería y accesorios</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================================
-    SERVICIOS
-    ============================================================ -->
-    <section class="services" id="servicios">
-        <div class="container">
-            <h2 class="section-title reveal">Nuestros Servicios</h2>
-            <p class="section-subtitle reveal">
-                Soluciones completas para profesionales y particulares. Calidad garantizada en cada producto.
-            </p>
-
-            <div class="services-grid">
-                <!-- Fontanería -->
-                <div class="service-card reveal">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-faucet-drip"></i>
-                    </div>
-                    <h3>Fontanería</h3>
-                    <p>Tuberías, grifería, accesorios y todo tipo de material para instalaciones de agua. Las mejores marcas al mejor precio.</p>
+                <div class="hero-service-card">
+                    <div class="hero-service-icon"><i class="fa-solid fa-temperature-arrow-up"></i></div>
+                    <h4>Calefacción</h4>
+                    <p>Radiadores, calderas, climatización</p>
                 </div>
-
-                <!-- Calefacción -->
-                <div class="service-card reveal">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-temperature-arrow-up"></i>
-                    </div>
-                    <h3>Calefacción</h3>
-                    <p>Radiadores, calderas, suelo radiante y sistemas de climatización eficiente. Confort garantizado para tu hogar.</p>
+                <div class="hero-service-card">
+                    <div class="hero-service-icon"><i class="fa-solid fa-water-ladder"></i></div>
+                    <h4>Piscinas</h4>
+                    <p>Bombas, filtros, tratamiento de agua</p>
                 </div>
-
-                <!-- Piscinas -->
-                <div class="service-card reveal">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-water-ladder"></i>
-                    </div>
-                    <h3>Piscinas</h3>
-                    <p>Bombas, filtros, cloro, floculantes y todo el equipamiento para mantener tu piscina a punto todo el año.</p>
+                <div class="hero-service-card">
+                    <div class="hero-service-icon"><i class="fa-solid fa-paint-roller"></i></div>
+                    <h4>Pinturas</h4>
+                    <p>Interior, exterior, acabados profesionales</p>
                 </div>
-
-                <!-- Pinturas -->
-                <div class="service-card reveal">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-paint-roller"></i>
-                    </div>
-                    <h3>Pinturas</h3>
-                    <p>Amplia gama de pinturas para interior, exterior y superficies especiales. Acabados profesionales.</p>
+                <div class="hero-service-card">
+                    <div class="hero-service-icon"><i class="fa-solid fa-solar-panel"></i></div>
+                    <h4>Energías Renovables</h4>
+                    <p>Aerotermia, solar, eficiencia energética</p>
                 </div>
-
-                <!-- Energías Renovables -->
-                <div class="service-card reveal">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-solar-panel"></i>
-                    </div>
-                    <h3>Energías Renovables</h3>
-                    <p>Aerotermia, paneles solares y soluciones sostenibles para reducir tu factura energética y cuidar el planeta.</p>
-                </div>
-
-                <!-- Accesorios -->
-                <div class="service-card reveal">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-toolbox"></i>
-                    </div>
-                    <h3>Accesorios</h3>
-                    <p>Herramientas, repuestos y complementos para instalaciones. Todo lo que necesitas en un mismo sitio.</p>
+                <div class="hero-service-card">
+                    <div class="hero-service-icon"><i class="fa-solid fa-toolbox"></i></div>
+                    <h4>Accesorios</h4>
+                    <p>Herramientas, repuestos y complementos</p>
                 </div>
             </div>
         </div>
@@ -193,7 +142,7 @@
             </p>
 
             <div class="products-grid" id="productsGrid">
-                <!-- Las imágenes deben estar en img/productos/prod-01.jpg hasta prod-26.jpg -->
+                <!-- Las imágenes deben estar en img/productos/prod-01.jpg hasta prod-13.jpg -->
                 <!-- Si tus imágenes son .png en lugar de .jpg, cambia la extensión abajo -->
 
                 <!-- Imagen 1-8 -->
@@ -222,7 +171,7 @@
                     <img src="img/productos/prod-08.jpg" alt="Producto Sumilor 8" loading="lazy" onerror="this.parentElement.style.display='none';">
                 </div>
 
-                <!-- Imagen 9-16 -->
+                <!-- Imagen 9-13 -->
                 <div class="product-item reveal" data-full="img/productos/prod-09.jpg">
                     <img src="img/productos/prod-09.jpg" alt="Producto Sumilor 9" loading="lazy" onerror="this.parentElement.style.display='none';">
                 </div>
@@ -237,49 +186,6 @@
                 </div>
                 <div class="product-item reveal" data-full="img/productos/prod-13.jpg">
                     <img src="img/productos/prod-13.jpg" alt="Producto Sumilor 13" loading="lazy" onerror="this.parentElement.style.display='none';">
-                </div>
-                <div class="product-item reveal" data-full="img/productos/prod-14.jpg">
-                    <img src="img/productos/prod-14.jpg" alt="Producto Sumilor 14" loading="lazy" onerror="this.parentElement.style.display='none';">
-                </div>
-                <div class="product-item reveal" data-full="img/productos/prod-15.jpg">
-                    <img src="img/productos/prod-15.jpg" alt="Producto Sumilor 15" loading="lazy" onerror="this.parentElement.style.display='none';">
-                </div>
-                <div class="product-item reveal" data-full="img/productos/prod-16.jpg">
-                    <img src="img/productos/prod-16.jpg" alt="Producto Sumilor 16" loading="lazy" onerror="this.parentElement.style.display='none';">
-                </div>
-
-                <!-- Imagen 17-24 -->
-                <div class="product-item reveal" data-full="img/productos/prod-17.jpg">
-                    <img src="img/productos/prod-17.jpg" alt="Producto Sumilor 17" loading="lazy" onerror="this.parentElement.style.display='none';">
-                </div>
-                <div class="product-item reveal" data-full="img/productos/prod-18.jpg">
-                    <img src="img/productos/prod-18.jpg" alt="Producto Sumilor 18" loading="lazy" onerror="this.parentElement.style.display='none';">
-                </div>
-                <div class="product-item reveal" data-full="img/productos/prod-19.jpg">
-                    <img src="img/productos/prod-19.jpg" alt="Producto Sumilor 19" loading="lazy" onerror="this.parentElement.style.display='none';">
-                </div>
-                <div class="product-item reveal" data-full="img/productos/prod-20.jpg">
-                    <img src="img/productos/prod-20.jpg" alt="Producto Sumilor 20" loading="lazy" onerror="this.parentElement.style.display='none';">
-                </div>
-                <div class="product-item reveal" data-full="img/productos/prod-21.jpg">
-                    <img src="img/productos/prod-21.jpg" alt="Producto Sumilor 21" loading="lazy" onerror="this.parentElement.style.display='none';">
-                </div>
-                <div class="product-item reveal" data-full="img/productos/prod-22.jpg">
-                    <img src="img/productos/prod-22.jpg" alt="Producto Sumilor 22" loading="lazy" onerror="this.parentElement.style.display='none';">
-                </div>
-                <div class="product-item reveal" data-full="img/productos/prod-23.jpg">
-                    <img src="img/productos/prod-23.jpg" alt="Producto Sumilor 23" loading="lazy" onerror="this.parentElement.style.display='none';">
-                </div>
-                <div class="product-item reveal" data-full="img/productos/prod-24.jpg">
-                    <img src="img/productos/prod-24.jpg" alt="Producto Sumilor 24" loading="lazy" onerror="this.parentElement.style.display='none';">
-                </div>
-
-                <!-- Imagen 25-26 -->
-                <div class="product-item reveal" data-full="img/productos/prod-25.jpg">
-                    <img src="img/productos/prod-25.jpg" alt="Producto Sumilor 25" loading="lazy" onerror="this.parentElement.style.display='none';">
-                </div>
-                <div class="product-item reveal" data-full="img/productos/prod-26.jpg">
-                    <img src="img/productos/prod-26.jpg" alt="Producto Sumilor 26" loading="lazy" onerror="this.parentElement.style.display='none';">
                 </div>
             </div>
         </div>
@@ -424,7 +330,7 @@
             <!-- Google Maps -->
             <div class="contact-map reveal">
                 <iframe
-                    src="https://www.google.com/maps?q=C%2F+R%C3%BAa+Galicia+88+Bajo+A%2C+36780+A+Guarda%2C+Pontevedra&output=embed&z=17"
+                    src="https://www.google.com/maps?q=R%C3%BAa+Galicia+88+A+Guarda+Pontevedra&output=embed&z=18"
                     allowfullscreen=""
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"

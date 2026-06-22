@@ -35,7 +35,7 @@
 
     /* Layout */
     --max-width: 1200px;
-    --header-height: 80px;
+    --header-height: 100px;
     --border-radius: 12px;
 }
 
@@ -183,7 +183,7 @@ h3 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); }
 }
 
 .header-logo img {
-    height: 50px;
+    height: 150px;
     width: auto;
 }
 
@@ -226,18 +226,69 @@ h3 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); }
     width: 100%;
 }
 
+.header-contact {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
 .header-phone {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     font-family: var(--font-heading);
     font-weight: 700;
     color: var(--color-primary);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
 }
 
 .header-phone i {
     color: var(--color-accent);
+}
+
+.header-email {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-heading);
+    font-weight: 500;
+    color: var(--text-medium);
+    font-size: 0.8rem;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+.header-email:hover {
+    color: var(--color-primary);
+}
+
+.header-email i {
+    color: var(--color-accent);
+}
+
+.header-social {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.header-social a {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--bg-blue-tint);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    color: var(--color-primary);
+    transition: all 0.3s ease;
+}
+
+.header-social a:hover {
+    background: var(--color-primary);
+    color: var(--text-white);
 }
 
 /* Menú hamburguesa */
@@ -381,59 +432,45 @@ h3 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); }
     border-color: var(--text-white);
 }
 
-.hero-visual {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-card {
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 20px;
-    padding: 40px;
-    text-align: center;
-    color: var(--text-white);
-    max-width: 380px;
-    width: 100%;
-}
-
-.hero-card-icon {
-    font-size: 3rem;
-    margin-bottom: 16px;
-}
-
-.hero-card h3 {
-    color: var(--text-white);
-    font-size: 1.5rem;
-    margin-bottom: 12px;
-}
-
-.hero-card p {
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 0.95rem;
-    margin: 0 auto;
-}
-
-.hero-features {
+.hero-services {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-top: 24px;
+    gap: 10px;
 }
 
-.hero-feature-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+.hero-service-card {
+    background: rgba(255, 255, 255, 0.09);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    padding: 14px;
+    text-align: center;
+    color: var(--text-white);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.hero-service-card:hover {
+    background: rgba(255, 255, 255, 0.16);
+    transform: translateY(-2px);
+}
+
+.hero-service-card .hero-service-icon {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+    opacity: 0.9;
+}
+
+.hero-service-card h4 {
     font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--text-white);
+    margin-bottom: 2px;
 }
 
-.hero-feature-item i {
-    color: #4FC3F7;
-    font-size: 0.75rem;
+.hero-service-card p {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.65);
+    margin: 0;
+    max-width: none;
 }
 
 /* ============================================================
@@ -1044,8 +1081,9 @@ h3 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); }
         justify-content: center;
     }
 
-    .hero-visual {
-        display: none;
+    .hero-services {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
     }
 
     .services-grid {
@@ -1114,7 +1152,7 @@ h3 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); }
         right: 0;
     }
 
-    .header-phone {
+    .header-contact {
         display: none;
     }
 
@@ -1138,6 +1176,11 @@ h3 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); }
 
     .hero h1 {
         font-size: 2rem;
+    }
+
+    .hero-services {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
     }
 
     .services-grid {
