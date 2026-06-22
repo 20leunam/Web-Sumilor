@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sumilor — Suministros de fontanería, calefacción, piscinas, pinturas y energías renovables. Más de 10 años dando la mejor solución en A Guarda, Pontevedra.">
+    <meta name="theme-color" content="#001B61">
+
+    <title>Sumilor | Fontanería · Calefacción · Piscinas · Pinturas</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ============================================================
+    HEADER
+    ============================================================ -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="#inicio" class="header-logo">
+                <img src="img/logo.png" alt="Sumilor Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <span style="display:none; font-family: var(--font-heading); font-weight:800; font-size:1.5rem; color:var(--color-primary); align-items:center; gap:4px;">
+                    <i class="fa-solid fa-droplet" style="color:var(--color-accent);"></i> SUMILOR
+                </span>
+            </a>
+
+            <nav class="header-nav" id="mainNav">
+                <a href="#inicio" class="active">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#productos">Productos</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#contacto">Contacto</a>
+                <span class="header-phone-mobile" style="display:none;">
+                    <i class="fa-solid fa-phone"></i> +34 986 61 08 87
+                </span>
+            </nav>
+
+            <a href="tel:+34986610887" class="header-phone">
+                <i class="fa-solid fa-phone"></i> 986 61 08 87
+            </a>
+
+            <button class="header-toggle" id="menuToggle" aria-label="Menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Overlay menú móvil -->
+    <div class="menu-overlay"></div>
+
+    <!-- ============================================================
+    HERO
+    ============================================================ -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg-image"></div>
+        <div class="container">
+            <div class="hero-content reveal">
+                <span class="hero-badge">
+                    <i class="fa-solid fa-star" style="margin-right:6px;"></i> Más de 10 años de experiencia
+                </span>
+                <h1>Del frío al calor, <span>tenemos la solución</span></h1>
+                <p>
+                    Tu tienda especializada en suministros de fontanería, calefacción,
+                    equipamiento para piscinas, pinturas y energías renovables.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#productos" class="btn btn-primary">
+                        Ver productos <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#contacto" class="btn btn-outline">
+                        <i class="fa-solid fa-location-dot"></i> Encuéntranos
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="hero-card">
+                    <div class="hero-card-icon">🛠️</div>
+                    <h3>Todo en un mismo lugar</h3>
+                    <p>Desde una tubería hasta una bomba de calor. Te asesoramos sin compromiso.</p>
+                    <div class="hero-features">
+                        <div class="hero-feature-item">
+                            <i class="fa-solid fa-circle-check"></i> Fontanería
+                        </div>
+                        <div class="hero-feature-item">
+                            <i class="fa-solid fa-circle-check"></i> Calefacción
+                        </div>
+                        <div class="hero-feature-item">
+                            <i class="fa-solid fa-circle-check"></i> Piscinas
+                        </div>
+                        <div class="hero-feature-item">
+                            <i class="fa-solid fa-circle-check"></i> Pinturas
+                        </div>
+                        <div class="hero-feature-item">
+                            <i class="fa-solid fa-circle-check"></i> Renovables
+                        </div>
+                        <div class="hero-feature-item">
+                            <i class="fa-solid fa-circle-check"></i> Accesorios
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    SERVICIOS
+    ============================================================ -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <h2 class="section-title reveal">Nuestros Servicios</h2>
+            <p class="section-subtitle reveal">
+                Soluciones completas para profesionales y particulares. Calidad garantizada en cada producto.
+            </p>
+
+            <div class="services-grid">
+                <!-- Fontanería -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-faucet-drip"></i>
+                    </div>
+                    <h3>Fontanería</h3>
+                    <p>Tuberías, grifería, accesorios y todo tipo de material para instalaciones de agua. Las mejores marcas al mejor precio.</p>
+                </div>
+
+                <!-- Calefacción -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-temperature-arrow-up"></i>
+                    </div>
+                    <h3>Calefacción</h3>
+                    <p>Radiadores, calderas, suelo radiante y sistemas de climatización eficiente. Confort garantizado para tu hogar.</p>
+                </div>
+
+                <!-- Piscinas -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-water-ladder"></i>
+                    </div>
+                    <h3>Piscinas</h3>
+                    <p>Bombas, filtros, cloro, floculantes y todo el equipamiento para mantener tu piscina a punto todo el año.</p>
+                </div>
+
+                <!-- Pinturas -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-paint-roller"></i>
+                    </div>
+                    <h3>Pinturas</h3>
+                    <p>Amplia gama de pinturas para interior, exterior y superficies especiales. Acabados profesionales.</p>
+                </div>
+
+                <!-- Energías Renovables -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-solar-panel"></i>
+                    </div>
+                    <h3>Energías Renovables</h3>
+                    <p>Aerotermia, paneles solares y soluciones sostenibles para reducir tu factura energética y cuidar el planeta.</p>
+                </div>
+
+                <!-- Accesorios -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-toolbox"></i>
+                    </div>
+                    <h3>Accesorios</h3>
+                    <p>Herramientas, repuestos y complementos para instalaciones. Todo lo que necesitas en un mismo sitio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    PRODUCTOS — Galería estilo RRSS
+    ============================================================ -->
+    <section class="products" id="productos">
+        <div class="container">
+            <h2 class="section-title reveal">Productos Destacados</h2>
+            <p class="section-subtitle reveal">
+                Descubre nuestras ofertas y novedades. Haz clic en cualquier imagen para ampliar.
+            </p>
+
+            <div class="products-grid" id="productsGrid">
+                <!-- Las imágenes deben estar en img/productos/prod-01.jpg hasta prod-26.jpg -->
+                <!-- Si tus imágenes son .png en lugar de .jpg, cambia la extensión abajo -->
+
+                <!-- Imagen 1-8 -->
+                <div class="product-item reveal" data-full="img/productos/prod-01.jpg">
+                    <img src="img/productos/prod-01.jpg" alt="Producto Sumilor 1" loading="lazy" onerror="this.parentElement.style.display='none';">
+                </div>
+                <div class="product-item reveal" data-full="img/productos/prod-02.jpg">
+                    <img src="img/productos/prod-02.jpg" alt="Producto Sumilor 2" loading="lazy" onerror="this.parentElement.style.display='none';">
+                </div>
+                <div class="product-item reveal" data-full="img/productos/prod-03.jpg">
+                    <img src="img/productos/prod-03.jpg" alt="Producto Sumilor 3" loading="lazy" onerror="this.parentElement.style.display='none';">
+                </div>
+                <div class="product-item reveal" data-full="img/productos/prod-04.jpg">
+                    <img src="img/productos/prod-04.jpg" alt="Producto Sumilor 4" loading="lazy" onerror="this.parentElement.style.display='none';">
+                </div>
+                <div class="product-item reveal" data-full="img/productos/prod-05.jpg">
+                    <img src="img/productos/prod-05.jpg" alt="Producto Sumilor 5" loading="lazy" onerror="this.parentElement.style.display='none';">
+                </div>
+                <div class="product-item reveal" data-full="img/productos/prod-06.jpg">
+                    <img src="img/productos/prod-06.jpg" alt="Producto Sumilor 6" loading="lazy" onerror="this.parentElement.style.display='none';">
+                </div>
+                <div class="product-item reveal" data-full="img/productos/prod-07.jpg">
+                    <img src="img/productos/prod-07.jpg" alt="Producto Sumilor 7" loading="lazy" onerror="this.parentElement.style.display='none';">
+                </div>
+                <div class="product-item reveal" data-full="img/productos/prod-08.jpg">
+                    <img src="img/productos/prod-08.jpg" alt="Producto Sumilor 8" loading="lazy" onerror="this.parentElement.style.display='none';">
+                </div>
+
+                <!-- Imagen 9-16 -->
+                <div class="product-item reveal" data-full="img/productos/prod-09.jpg">
+                    <img src="img/productos/prod-09.jpg" alt="Producto Sumilor 9" loading="lazy" onerror="this.parentElement.style.display='none';">
+                </div>
+                <div class="product-item reveal" data-full="img/productos/prod-10.jpg">
+                    <img src="img/productos/prod-10.jpg" alt="Producto Sumilor 10" loading="lazy" onerror="this.parentElement.style.display='none';">
+                </div>
+                <div class="product-item reveal" data-full="img/productos/prod-11.jpg">
+                    <img src="img/productos/prod-11.jpg" alt="Producto Sumilor 11" loading="lazy" onerror="this.parentElement.style.display='none';">
+                </div>
+                <div class="product-item reveal" data-full="img/productos/prod-12.jpg">
+                    <img src="img/productos/prod-12.jpg" alt="Producto Sumilor 12" loading="lazy" onerror="this.parentElement.style.display='none';">
+                </div>
+                <div class="product-item reveal" data-full="img/productos/prod-13.jpg">
+                    <img src="img/productos/prod-13.jpg" alt="Producto Sumilor 13" loading="lazy" onerror="this.parentElement.style.display='none';">
+                </div>
+                <div class="product-item reveal" data-full="img/productos/prod-14.jpg">
+                    <img src="img/productos/prod-14.jpg" alt="Producto Sumilor 14" loading="lazy" onerror="this.parentElement.style.display='none';">
+                </div>
+                <div class="product-item reveal" data-full="img/productos/prod-15.jpg">
+                    <img src="img/productos/prod-15.jpg" alt="Producto Sumilor 15" loading="lazy" onerror="this.parentElement.style.display='none';">
+                </div>
+                <div class="product-item reveal" data-full="img/productos/prod-16.jpg">
+                    <img src="img/productos/prod-16.jpg" alt="Producto Sumilor 16" loading="lazy" onerror="this.parentElement.style.display='none';">
+                </div>
+
+                <!-- Imagen 17-24 -->
+                <div class="product-item reveal" data-full="img/productos/prod-17.jpg">
+                    <img src="img/productos/prod-17.jpg" alt="Producto Sumilor 17" loading="lazy" onerror="this.parentElement.style.display='none';">
+                </div>
+                <div class="product-item reveal" data-full="img/productos/prod-18.jpg">
+                    <img src="img/productos/prod-18.jpg" alt="Producto Sumilor 18" loading="lazy" onerror="this.parentElement.style.display='none';">
+                </div>
+                <div class="product-item reveal" data-full="img/productos/prod-19.jpg">
+                    <img src="img/productos/prod-19.jpg" alt="Producto Sumilor 19" loading="lazy" onerror="this.parentElement.style.display='none';">
+                </div>
+                <div class="product-item reveal" data-full="img/productos/prod-20.jpg">
+                    <img src="img/productos/prod-20.jpg" alt="Producto Sumilor 20" loading="lazy" onerror="this.parentElement.style.display='none';">
+                </div>
+                <div class="product-item reveal" data-full="img/productos/prod-21.jpg">
+                    <img src="img/productos/prod-21.jpg" alt="Producto Sumilor 21" loading="lazy" onerror="this.parentElement.style.display='none';">
+                </div>
+                <div class="product-item reveal" data-full="img/productos/prod-22.jpg">
+                    <img src="img/productos/prod-22.jpg" alt="Producto Sumilor 22" loading="lazy" onerror="this.parentElement.style.display='none';">
+                </div>
+                <div class="product-item reveal" data-full="img/productos/prod-23.jpg">
+                    <img src="img/productos/prod-23.jpg" alt="Producto Sumilor 23" loading="lazy" onerror="this.parentElement.style.display='none';">
+                </div>
+                <div class="product-item reveal" data-full="img/productos/prod-24.jpg">
+                    <img src="img/productos/prod-24.jpg" alt="Producto Sumilor 24" loading="lazy" onerror="this.parentElement.style.display='none';">
+                </div>
+
+                <!-- Imagen 25-26 -->
+                <div class="product-item reveal" data-full="img/productos/prod-25.jpg">
+                    <img src="img/productos/prod-25.jpg" alt="Producto Sumilor 25" loading="lazy" onerror="this.parentElement.style.display='none';">
+                </div>
+                <div class="product-item reveal" data-full="img/productos/prod-26.jpg">
+                    <img src="img/productos/prod-26.jpg" alt="Producto Sumilor 26" loading="lazy" onerror="this.parentElement.style.display='none';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    SOBRE NOSOTROS
+    ============================================================ -->
+    <section class="about" id="nosotros">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <h2>Sobre Nosotros</h2>
+                    <p>
+                        En <strong>Sumilor</strong> llevamos más de una década ofreciendo soluciones
+                        en suministros de fontanería, calefacción, equipamiento para piscinas, pinturas
+                        y energías renovables.
+                    </p>
+                    <p>
+                        Somos tu tienda de confianza en <strong>A Guarda</strong>. Trabajamos con las
+                        mejores marcas y ofrecemos asesoramiento personalizado para que encuentres
+                        exactamente lo que necesitas. Del frío al calor, tenemos la solución.
+                    </p>
+                    <p>
+                        Atención cercana, producto de calidad y el mejor precio. Visítanos y
+                        descubre por qué somos la referencia en la comarca del Baixo Miño.
+                    </p>
+
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="10">0+</span>
+                            <span class="stat-label">Años de<br>experiencia</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="5000">0+</span>
+                            <span class="stat-label">Productos en<br>catálogo</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="1000">0+</span>
+                            <span class="stat-label">Clientes<br>satisfechos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image reveal">
+                    <!-- Si tienes una foto de la tienda, renómbrala como img/tienda.jpg -->
+                    <!-- Si no, se muestra un placeholder con degradado corporativo -->
+                    <div style="width:100%; aspect-ratio:4/3; background:linear-gradient(135deg, var(--color-primary), #003D99); border-radius:20px; display:flex; align-items:center; justify-content:center; color:white; font-size:4rem; opacity:0.9;">
+                        <i class="fa-solid fa-shop"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CONTACTO
+    ============================================================ -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <h2 class="section-title reveal">Contacto</h2>
+            <p class="section-subtitle reveal">
+                Estamos en A Guarda. Ven a visitarnos o contacta con nosotros.
+            </p>
+
+            <div class="contact-grid">
+                <!-- Formulario -->
+                <div class="contact-form reveal">
+                    <h3><i class="fa-regular fa-envelope" style="margin-right:8px;"></i>Envíanos un mensaje</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width:100%;">
+                            Enviar mensaje <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Info de contacto -->
+                <div class="contact-info reveal">
+                    <h3>Información de contacto</h3>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="contact-item-content">
+                            <strong>Dirección</strong>
+                            <span>C/ Rúa Galicia 88 Bajo A<br>36780 A Guarda, Pontevedra</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact-item-content">
+                            <strong>Teléfono</strong>
+                            <a href="tel:+34986610887">+34 986 61 08 87</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contact-item-content">
+                            <strong>Email</strong>
+                            <a href="mailto:sumilorlorenzo@gmail.com">sumilorlorenzo@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <!-- Horario -->
+                    <div class="hours-box">
+                        <h4><i class="fa-regular fa-clock"></i> Horario</h4>
+                        <div class="hours-row">
+                            <span>Lunes – Viernes</span>
+                            <strong>9:00 – 13:00</strong>
+                        </div>
+                        <div class="hours-row">
+                            <span>Lunes – Viernes (tarde)</span>
+                            <strong>14:30 – 20:30</strong>
+                        </div>
+                        <div class="hours-row">
+                            <span>Sábado</span>
+                            <strong>9:00 – 14:00</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Maps -->
+            <div class="contact-map reveal">
+                <iframe
+                    src="https://www.google.com/maps?q=C%2F+R%C3%BAa+Galicia+88+Bajo+A%2C+36780+A+Guarda%2C+Pontevedra&output=embed&z=17"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Ubicación de Sumilor en A Guarda">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Marca -->
+                <div class="footer-brand">
+                    <img src="img/logo.png" alt="Sumilor" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span style="display:none; font-family:var(--font-heading); font-weight:800; font-size:1.3rem; margin-bottom:12px;">SUMILOR</span>
+                    <p>
+                        Tu tienda especializada en suministros de fontanería, calefacción,
+                        piscinas, pinturas y energías renovables. Más de 10 años contigo.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/people/Sumilor/100054225080694/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/sumilor__/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Enlaces rápidos -->
+                <div>
+                    <h4>Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio"><i class="fa-solid fa-chevron-right" style="font-size:0.7rem;"></i> Inicio</a></li>
+                        <li><a href="#servicios"><i class="fa-solid fa-chevron-right" style="font-size:0.7rem;"></i> Servicios</a></li>
+                        <li><a href="#productos"><i class="fa-solid fa-chevron-right" style="font-size:0.7rem;"></i> Productos</a></li>
+                        <li><a href="#nosotros"><i class="fa-solid fa-chevron-right" style="font-size:0.7rem;"></i> Nosotros</a></li>
+                        <li><a href="#contacto"><i class="fa-solid fa-chevron-right" style="font-size:0.7rem;"></i> Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contacto rápido -->
+                <div>
+                    <h4>Contacto</h4>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="tel:+34986610887">
+                                <i class="fa-solid fa-phone"></i> 986 61 08 87
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:sumilorlorenzo@gmail.com">
+                                <i class="fa-solid fa-envelope"></i> sumilorlorenzo@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://maps.google.com/?q=C+Rúa+Galicia+88+Bajo+A+36780+A+Guarda+Pontevedra" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-solid fa-map-pin"></i> Cómo llegar
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Sumilor. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    LIGHTBOX
+    ============================================================ -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Cerrar">&times;</button>
+        <button class="lightbox-prev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="lightbox-next" aria-label="Siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+        <img src="" alt="Vista ampliada del producto">
+    </div>
+
+    <!-- ============================================================
+    SCRIPTS
+    ============================================================ -->
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
