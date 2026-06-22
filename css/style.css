@@ -1246,6 +1246,10 @@ h3 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); }
         padding-bottom: 40px;
     }
 
+    .header-nav .header-nav-email {
+        font-size: 0.75rem;
+    }
+
     .hero {
         min-height: auto;
         padding: calc(var(--header-height) + 40px) 0 60px;
